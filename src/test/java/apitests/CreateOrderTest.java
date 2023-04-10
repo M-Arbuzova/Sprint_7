@@ -46,7 +46,7 @@ public class CreateOrderTest {
     @Description("Проверка, что можно создать заказ на: серый цвет, черный цвет, выбор двух цветов, без выбора цвета")
     public void ParamCreateOrderTest() {
         Order order = new Order("Мария", "Арбузова", "Осенний бульвар, 10", "5", "79001001010", 2, "2023-10-11", "Доставить самокат", color);
-        ValidatableResponse response = orderApi.CreateOrder(order);
+        ValidatableResponse response = orderApi.createOrder(order);
         response.assertThat().statusCode(SC_CREATED).and().body("track", notNullValue());
     }
 }

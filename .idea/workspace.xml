@@ -4,22 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6158f185-b0b3-40f1-a41d-6c435a8921b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/ScooterRentSpec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/Courier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/CourierApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/OrderApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/OrderNumberTrack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apitests/LoginCourierTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apitests/OrderListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="6158f185-b0b3-40f1-a41d-6c435a8921b7" name="Changes" comment="Add Allure, classes and tests. Create pom and Readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/courier/CourierApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/courier/CourierApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/order/OrderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/LoginCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/LoginCourierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/OrderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/OrderListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,18 +76,22 @@
       <command value="mvn allure:serve" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreateOrderTest">
-    <configuration name="CreateCourierTest.RegDuplicateCourierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateCourierTest and 4 more">
+    <configuration name="CreateCourierTest and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
-      <option name="PACKAGE_NAME" value="apitests" />
-      <option name="MAIN_CLASS_NAME" value="apitests.CreateCourierTest" />
-      <option name="METHOD_NAME" value="RegDuplicateCourierTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="apitests.CreateCourierTest" />
+        <pattern testClass="apitests.CreateOrderTest" />
+        <pattern testClass="apitests.DeleteCourierTest" />
+        <pattern testClass="apitests.LoginCourierTest" />
+        <pattern testClass="apitests.OrderListTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateCourierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <extension name="coverage">
         <pattern>
@@ -102,45 +100,66 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="apitests" />
-      <option name="MAIN_CLASS_NAME" value="apitests.CreateOrderTest" />
+      <option name="MAIN_CLASS_NAME" value="apitests.CreateCourierTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateOrderTest.ParamCreateOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteCourierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="apitests" />
-      <option name="MAIN_CLASS_NAME" value="apitests.CreateOrderTest" />
-      <option name="METHOD_NAME" value="ParamCreateOrderTest" />
+      <option name="MAIN_CLASS_NAME" value="apitests.DeleteCourierTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginCourierTest.NoLoginCourierWithoutLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apitests" />
+      <option name="MAIN_CLASS_NAME" value="apitests.LoginCourierTest" />
+      <option name="METHOD_NAME" value="NoLoginCourierWithoutLoginTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="apitests in Sprint_7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginCourierTest.SuccessLoginCourierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/apitests" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="java in Sprint_7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sprint_7" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apitests" />
+      <option name="MAIN_CLASS_NAME" value="apitests.LoginCourierTest" />
+      <option name="METHOD_NAME" value="SuccessLoginCourierTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateOrderTest" />
-        <item itemvalue="JUnit.apitests in Sprint_7" />
-        <item itemvalue="JUnit.java in Sprint_7" />
-        <item itemvalue="JUnit.CreateOrderTest.ParamCreateOrderTest" />
-        <item itemvalue="JUnit.CreateCourierTest.RegDuplicateCourierTest" />
+        <item itemvalue="JUnit.CreateCourierTest and 4 more" />
+        <item itemvalue="JUnit.LoginCourierTest.SuccessLoginCourierTest" />
+        <item itemvalue="JUnit.LoginCourierTest.NoLoginCourierWithoutLoginTest" />
+        <item itemvalue="JUnit.DeleteCourierTest" />
+        <item itemvalue="JUnit.CreateCourierTest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +172,19 @@
       <option name="presentableId" value="Default" />
       <updated>1680558693383</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add Allure, classes and tests. Create pom and Readme">
+      <created>1680876352675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680876352675</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Allure, classes and tests. Create pom and Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Allure, classes and tests. Create pom and Readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -162,14 +193,15 @@
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="5" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/apitests/CreateCourierTest.java</url>
-          <line>44</line>
-          <properties class="CreateCourierTest" method="RegDuplicateCourierTest">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
+          <line>38</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/apitests/CreateCourierTest.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

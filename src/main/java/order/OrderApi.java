@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class OrderApi extends ScooterRentSpec {
     public static final String API_ORDERS = "/api/v1/orders";
 
-    public ValidatableResponse CreateOrder(Order order) {
+    public ValidatableResponse createOrder(Order order) {
         return given()
                 .spec(ScooterRentSpec.requestSpecification())
                 .and()

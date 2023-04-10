@@ -1,12 +1,12 @@
 package courier;
 
 
-import static org.apache.commons.lang3.RandomStringUtils.randomAlphanumeric;
+import org.apache.commons.lang3.RandomStringUtils;
 
 public class CourierData {
 
-    private static final Courier courierNew = new Courier(randomAlphanumeric(5), "1234", "saske");
-    private static final Courier courierYet = new Courier("ninja", "1234", "saske");
+    private static final Courier courierNew = new Courier(RandomStringUtils.randomAlphabetic(5), "1234", "saske");
+    private static final Courier courierDefault = new Courier("ninja", "1234", "saske");
     private static final Courier courierWithoutLogin = new Courier("", "1234", "saske");
     private static final Courier courierWithoutPassword = new Courier("Petr", "", "saske");
 
@@ -14,8 +14,8 @@ public class CourierData {
         return courierNew;
     }
 
-    public static Courier getCourierYet() {
-        return courierYet;
+    public static Courier courierDefault() {
+        return courierDefault;
     }
 
     public static Courier getCourierWithoutLogin() {
@@ -26,3 +26,4 @@ public class CourierData {
         return courierWithoutPassword;
     }
 }
+

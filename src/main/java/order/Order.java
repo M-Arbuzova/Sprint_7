@@ -3,7 +3,7 @@ package order;
 import java.util.List;
 
 public class Order {
-    public List<String> color;
+    private List<String> color;
     private String firstName;
     private String lastName;
     private String address;

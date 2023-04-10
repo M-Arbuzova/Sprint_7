@@ -28,7 +28,7 @@ public class OrderListTest {
                 .when()
                 .get(OrderApi.API_ORDERS)
                 .then()
-                .assertThat().statusCode(SC_OK).and().body("orders", notNullValue());
+                .statusCode(SC_OK).assertThat().body("orders", notNullValue());
 
     }
 }

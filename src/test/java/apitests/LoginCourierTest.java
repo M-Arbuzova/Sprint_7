@@ -13,9 +13,10 @@ import org.junit.Test;
 
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
 
 public class LoginCourierTest {
-    static Integer id;
+    static String id;
     Courier courier = new Courier("Petrovich1", "1234", "Petr");
     CourierApi courierApi = new CourierApi();
 
@@ -25,23 +26,22 @@ public class LoginCourierTest {
     }
 
     @Test
-    @DisplayName("Авторизация курьера")
-    @Description("Проверка, что курьер может авторизоваться с валидными значениями")
-    public void SuccessLoginCourierTest() {
-        Courier courier = new Courier("Petrovich1", "1234", "Petr");
-        ValidatableResponse response = courierApi.CourierReg(courier);
-        ValidatableResponse responseLogin = courierApi.CourierLogin(courier);
-        id = responseLogin.extract().path("id");
-        responseLogin.assertThat().statusCode(SC_OK).body("id", is(id));
-    }
-
-    @Test
     @DisplayName("Авторизация курьера без логина")
     @Description("Проверка, что курьер не может авторизоваться без логина")
     public void NoLoginCourierWithoutLoginTest() {
-        Courier courier = new Courier("", "1234", "Petr");
-        ValidatableResponse response = courierApi.CourierLogin(courier);
+        Courier courier = new Courier("Petrovich1", "", "Petr");
+        ValidatableResponse response = courierApi.courierLogin(courier);
         response.assertThat().statusCode(SC_BAD_REQUEST).and().body("message", is("Недостаточно данных для входа"));
+    }
+
+    @Test
+    @DisplayName("Авторизация курьера")
+    @Description("Проверка, что курьер может авторизоваться с валидными значениями")
+    public void SuccessLoginCourierTest() {
+        ValidatableResponse response = courierApi.courierReg(courier);
+        ValidatableResponse loginResponse = courierApi.courierLogin(courier);
+        id = loginResponse.extract().path("id").toString();
+        loginResponse.assertThat().statusCode(SC_OK).body("id", notNullValue());
     }
 
     @Test
@@ -49,7 +49,7 @@ public class LoginCourierTest {
     @Description("Проверка, что курьер не может авторизоваться пароля")
     public void NoLoginCourierWithoutPasswordTest() {
         Courier courier = new Courier("Petrovich1", "", "Petr");
-        ValidatableResponse response = courierApi.CourierLogin(courier);
+        ValidatableResponse response = courierApi.courierLogin(courier);
         response.assertThat().statusCode(SC_BAD_REQUEST).and().body("message", is("Недостаточно данных для входа"));
     }
 
@@ -58,7 +58,7 @@ public class LoginCourierTest {
     @Description("Проверка, что курьер не может авторизоваться с неправильным паролем")
     public void NoLoginCourierWithWrongPasswordTest() {
         Courier courier = new Courier("Petrovich1", "1234567");
-        ValidatableResponse response = courierApi.CourierLogin(courier);
+        ValidatableResponse response = courierApi.courierLogin(courier);
         response.assertThat().statusCode(SC_NOT_FOUND).and().body("message", is("Учетная запись не найдена"));
     }
 
@@ -67,13 +67,13 @@ public class LoginCourierTest {
     @Description("Проверка, что курьер не может авторизоваться с логином паролем")
     public void NoLoginCourierWithWrongLoginTest() {
         Courier courier = new Courier("Petrovich123", "1234");
-        ValidatableResponse response = courierApi.CourierLogin(courier);
+        ValidatableResponse response = courierApi.courierLogin(courier);
         response.assertThat().statusCode(SC_NOT_FOUND).and().body("message", is("Учетная запись не найдена"));
     }
 
     @After
     public void tearDown() {
-        courierApi.CourierDelete(id);
+        courierApi.courierDelete(id);
         courierApi.checkCourierDeleted(id);
     }
 }
