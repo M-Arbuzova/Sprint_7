@@ -7,8 +7,7 @@ public class CourierData {
 
     private static final Courier courierNew = new Courier(RandomStringUtils.randomAlphabetic(5), "1234", "saske");
     private static final Courier courierDefault = new Courier("ninja", "1234", "saske");
-    private static final Courier courierWithoutLogin = new Courier("", "1234", "saske");
-    private static final Courier courierWithoutPassword = new Courier("Petr", "", "saske");
+    private static final Courier courierWithoutLogin = new Courier("", RandomStringUtils.randomAlphabetic(5), RandomStringUtils.randomAlphabetic(5));
 
     public static Courier getCourierNew() {
         return courierNew;
@@ -22,8 +21,5 @@ public class CourierData {
         return courierWithoutLogin;
     }
 
-    public static Courier getCourierWithoutPassword() {
-        return courierWithoutPassword;
-    }
 }
 

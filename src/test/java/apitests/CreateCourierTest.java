@@ -63,14 +63,6 @@ public class CreateCourierTest {
         response.statusCode(SC_BAD_REQUEST)
                 .and().assertThat().body("message", is("Недостаточно данных для создания учетной записи"));
     }
-
-    @Test
-    @DisplayName("Нельзя зарегистрировать курьера без пароля")
-    @Description("Проверка, что появится ошибка при попытке создания курьера без заполнения пароля")
-    public void RegCourierWithoutPasswordTest() {
-        ValidatableResponse response = courierApi.courierReg(CourierData.getCourierWithoutPassword());
-        response.statusCode(SC_BAD_REQUEST)
-                .and().assertThat().body("message", is("Недостаточно данных для создания учетной записи"));
-    }
 }
+
 
