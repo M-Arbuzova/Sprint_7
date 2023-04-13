@@ -13,7 +13,7 @@ public class CourierData {
         return courierNew;
     }
 
-    public static Courier courierDefault() {
+    public static Courier getCourierDefault() {
         return courierDefault;
     }
 

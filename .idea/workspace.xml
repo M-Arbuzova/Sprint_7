@@ -4,31 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6158f185-b0b3-40f1-a41d-6c435a8921b7" name="Changes" comment="Update after review">
-      <change afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierWithoutPasswordTest.java" afterDir="false" />
+    <list default="true" id="6158f185-b0b3-40f1-a41d-6c435a8921b7" name="Changes" comment="Add allure">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/courier/CourierApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/courier/CourierApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierWithoutPasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierWithoutPasswordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/DeleteCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/DeleteCourierTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/apitests/LoginCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/LoginCourierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/2ca10462-53e7-4c35-baaf-6bf463d6b4f6-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/2d3b7592-76be-4c3d-af66-570a07b6e9aa-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/3522d4c3-e00b-46fc-8da0-3acf96ad2b30-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/3c13512f-d0e1-42f5-a0d4-c82df356cdda-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/3caacc28-6beb-42b8-98a7-52d6ad977fa3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/420df412-036b-463f-aa97-2bbc83cd56a7-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/43572308-7b05-4e9f-a286-191df9fe282a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/5740b8e2-f4be-430e-8bb9-fed3e93d6921-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/71524894-cd76-44bf-b816-0215494bfac6-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/883a7327-376f-49df-87f3-772f52647ba5-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/a048618f-995c-461a-b678-4fe676895d05-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/a966fd30-3363-4938-9f05-ae22b10addbc-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/cf2cd45c-fab7-49bc-801a-3a7742b85861-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/executor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/fc181ff0-6a72-4767-afa2-286b427aab8a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/fe058a18-203a-49e9-9cfc-12408490008c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/OrderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/OrderListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,7 +77,7 @@
       <command value="mvn allure:serve" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.apitests in Sprint_7">
+  <component name="RunManager" selected="JUnit.CreateCourierTest.regDuplicateCourierTest">
     <configuration name="CreateCourierTest and 5 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <option name="TEST_OBJECT" value="pattern" />
@@ -119,6 +104,22 @@
       <option name="PACKAGE_NAME" value="apitests" />
       <option name="MAIN_CLASS_NAME" value="apitests.CreateCourierTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateCourierTest.regDuplicateCourierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apitests" />
+      <option name="MAIN_CLASS_NAME" value="apitests.CreateCourierTest" />
+      <option name="METHOD_NAME" value="regDuplicateCourierTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,21 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="apitests in Sprint_7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sprint_7" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/apitests" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.apitests in Sprint_7" />
-        <item itemvalue="JUnit.CreateCourierWithoutPasswordTest" />
-        <item itemvalue="JUnit.CreateCourierTest" />
-        <item itemvalue="JUnit.CreateCourierTest and 5 more" />
+        <item itemvalue="JUnit.CreateCourierTest.regDuplicateCourierTest" />
         <item itemvalue="JUnit.CreateCourierWithoutPasswordTest.RegCourierWithoutPasswordTest" />
+        <item itemvalue="JUnit.CreateCourierWithoutPasswordTest" />
+        <item itemvalue="JUnit.CreateCourierTest and 5 more" />
+        <item itemvalue="JUnit.CreateCourierTest" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681117594692</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update after review 2.0">
+      <created>1681294450464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681294450464</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add allure">
+      <created>1681334456270</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681334456270</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +219,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Allure, classes and tests. Create pom and Readme" />
     <MESSAGE value="Update after review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update after review" />
+    <MESSAGE value="Update after review 2.0" />
+    <MESSAGE value="Add allure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add allure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -34,7 +34,7 @@ public class DeleteCourierTest {
     @Test
     @DisplayName("Курьера можно удалить")
     @Description("Проверка, что созданный курьер успешно удаляется")
-    public void DeleteCourierTest() {
+    public void deleteCourierTest() {
         ValidatableResponse response = courierApi.courierReg(CourierData.getCourierNew());
         response.assertThat().body("ok", is(true)).and().statusCode(SC_CREATED);
 

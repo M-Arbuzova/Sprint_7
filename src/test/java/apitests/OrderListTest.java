@@ -22,7 +22,7 @@ public class OrderListTest {
     @Test
     @DisplayName("Получение списка заказов")
     @Description("Проверка, что в тело ответа возвращается список заказов")
-    public void GetOrderListTest() {
+    public void getOrderListTest() {
         ValidatableResponse response = given()
                 .spec(ScooterRentSpec.requestSpecification())
                 .when()

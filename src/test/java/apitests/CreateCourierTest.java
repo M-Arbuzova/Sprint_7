@@ -1,6 +1,7 @@
 package apitests;
 
 import client.ScooterRentSpec;
+import courier.Courier;
 import courier.CourierApi;
 import courier.CourierData;
 import io.qameta.allure.Description;
@@ -34,7 +35,7 @@ public class CreateCourierTest {
     @Test
     @DisplayName("Регистрации нового курьера")
     @Description("Проверка, что можно создать нового курьера с валидными значениями")
-    public void RegNewCourierTest() {
+    public void regNewCourierTest() {
         ValidatableResponse response = courierApi.courierReg(CourierData.getCourierNew());
         response.assertThat().statusCode(SC_CREATED).body("ok", is(true)).log().all();
         ValidatableResponse loginResponse = courierApi.courierLogin(CourierData.getCourierNew());
@@ -44,12 +45,13 @@ public class CreateCourierTest {
     @Test
     @DisplayName("Нельзя зарегистрироваться двух одинаковых курьеров")
     @Description("Проверка, что нельзя создать нового курьера, если вводимый логин уже есть в системе")
-    public void RegDuplicateCourierTest() {
-        ValidatableResponse response = courierApi.courierReg(CourierData.getCourierNew());
+    public void regDuplicateCourierTest() {
+        Courier courier = new Courier("Petrov123", "123", "Petr");
+        ValidatableResponse response = courierApi.courierReg(courier);
         response.statusCode(SC_CREATED);
-        ValidatableResponse loginResponse = courierApi.courierLogin(CourierData.getCourierNew());
+        ValidatableResponse loginResponse = courierApi.courierLogin(courier);
         id = loginResponse.extract().path("id").toString();
-        ValidatableResponse response2 = courierApi.courierReg(CourierData.getCourierNew());
+        ValidatableResponse response2 = courierApi.courierReg(courier);
         response2.statusCode(SC_CONFLICT)
                 .and().assertThat().body("message", is("Этот логин уже используется. Попробуйте другой."));
 
@@ -58,7 +60,7 @@ public class CreateCourierTest {
     @Test
     @DisplayName("Нельзя зарегистрировать курьера без логина")
     @Description("Проверка, что появится ошибка при попытке создания курьера без заполнения логина")
-    public void RegCourierWithoutLoginTest() {
+    public void regCourierWithoutLoginTest() {
         ValidatableResponse response = courierApi.courierReg(CourierData.getCourierWithoutLogin());
         response.statusCode(SC_BAD_REQUEST)
                 .and().assertThat().body("message", is("Недостаточно данных для создания учетной записи"));
