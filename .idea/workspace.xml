@@ -4,14 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6158f185-b0b3-40f1-a41d-6c435a8921b7" name="Changes" comment="" />
+    <list default="true" id="6158f185-b0b3-40f1-a41d-6c435a8921b7" name="Changes" comment="Add allure">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierWithoutPasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateCourierWithoutPasswordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/CreateOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/DeleteCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/DeleteCourierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/LoginCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/LoginCourierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apitests/OrderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apitests/OrderListTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -26,12 +52,119 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Administrator/Sprint_7/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Sprint_7&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+      <command value="mvn clean test " />
+      <command value="mvn allure:serve" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CreateCourierTest.regDuplicateCourierTest">
+    <configuration name="CreateCourierTest and 5 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="apitests.CreateCourierTest" />
+        <pattern testClass="apitests.CreateCourierWithWrongDataTest" />
+        <pattern testClass="apitests.CreateOrderTest" />
+        <pattern testClass="apitests.DeleteCourierTest" />
+        <pattern testClass="apitests.LoginCourierTest" />
+        <pattern testClass="apitests.OrderListTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateCourierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apitests" />
+      <option name="MAIN_CLASS_NAME" value="apitests.CreateCourierTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateCourierTest.regDuplicateCourierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apitests" />
+      <option name="MAIN_CLASS_NAME" value="apitests.CreateCourierTest" />
+      <option name="METHOD_NAME" value="regDuplicateCourierTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateCourierWithoutPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apitests" />
+      <option name="MAIN_CLASS_NAME" value="apitests.CreateCourierWithoutPasswordTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateCourierWithoutPasswordTest.RegCourierWithoutPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apitests" />
+      <option name="MAIN_CLASS_NAME" value="apitests.CreateCourierWithoutPasswordTest" />
+      <option name="METHOD_NAME" value="RegCourierWithoutPasswordTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CreateCourierTest.regDuplicateCourierTest" />
+        <item itemvalue="JUnit.CreateCourierWithoutPasswordTest.RegCourierWithoutPasswordTest" />
+        <item itemvalue="JUnit.CreateCourierWithoutPasswordTest" />
+        <item itemvalue="JUnit.CreateCourierTest and 5 more" />
+        <item itemvalue="JUnit.CreateCourierTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,6 +174,63 @@
       <option name="presentableId" value="Default" />
       <updated>1680558693383</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add Allure, classes and tests. Create pom and Readme">
+      <created>1680876352675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680876352675</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update after review">
+      <created>1681117594692</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681117594692</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update after review 2.0">
+      <created>1681294450464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681294450464</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add allure">
+      <created>1681334456270</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681334456270</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Allure, classes and tests. Create pom and Readme" />
+    <MESSAGE value="Update after review" />
+    <MESSAGE value="Update after review 2.0" />
+    <MESSAGE value="Add allure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add allure" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
